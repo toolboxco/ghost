@@ -14,9 +14,16 @@
       "database": "DATABASE_NAME"
     }
   },
-  "mail": {
-    "transport": "Direct"
-  },
+"mail": {
+      "transport": "SMTP",
+      "options": {
+           "service": "Mailgun",
+           "auth": {
+                "user": "postmaster@mail.investmint.co",
+                "pass": "Investmint@3011"
+                }
+           }
+ },
   "logging": {
     "transports": [
       "stdout"
